@@ -124,8 +124,7 @@ li {
 
 .works-img {
   width: 407px;
-  height: 255px;
-  background-color: #565353;
+  height: auto;
 }
 
 .title-section {
@@ -168,11 +167,12 @@ li {
 
 .second-img {
   z-index: 2;
+  padding-bottom: 26px;
 }
 
 .first-img {
   position: relative;
-  transform: rotate(173deg);
+  transform: rotate(347deg);
   left: 277px;
   bottom: 34px;
   z-index: 2;
@@ -180,7 +180,7 @@ li {
 
 .third-img {
   position: relative;
-  transform: rotate(188deg);
+  transform: rotate(10deg);
   right: 236px;
   bottom: 76px;
   z-index: 0;
