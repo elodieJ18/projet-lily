@@ -84,7 +84,7 @@ li {
   display: flex;
   flex-direction: column;
   border: 1px #262121 solid;
-  row-gap: 281px;
+  row-gap: 314px;
 }
 
 .titre-twenty-two {
@@ -125,6 +125,10 @@ li {
 .works-img {
   width: 407px;
   height: auto;
+}
+
+.works-img {
+  cursor: url("img/souris/cursor-01.png"), auto;
 }
 
 .title-section {
