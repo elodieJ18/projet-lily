@@ -165,16 +165,23 @@ li {
 
 /*-------presentation----animation-----------*/
 
+.cash-presentation {
+  width: 100%;
+  background-color: rgb(255, 251, 246);
+  height: 16vh;
+  padding-top: 23px;
+  padding-bottom: -5px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 5;
+}
+
 .works-content-element {
   margin-top: 64px;
 }
 
 .works-content-presentation {
   padding-top: 85px;
-}
-
-.works-content-presentation:hover {
-  padding-top: 80px;
 }
 
 .works-img-presentation {
@@ -197,6 +204,10 @@ li {
   padding-bottom: 26px;
 }
 
+.second-img:hover {
+  bottom: 22px;
+}
+
 .first-img {
   position: relative;
   transform: rotate(347deg);
@@ -217,6 +228,7 @@ li {
   display: flex;
   justify-content: center;
   padding-bottom: 72px;
+  display: none;
 }
 
 .works-img-all {
