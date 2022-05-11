@@ -120,15 +120,12 @@ li {
 /*-----------------work---------------*/
 #works {
   background-color: #f9f6f2;
+  cursor: url("img/souris/cursor-01.png"), auto;
 }
 
 .works-img {
   width: 407px;
   height: auto;
-}
-
-.works-img {
-  cursor: url("img/souris/cursor-01.png"), auto;
 }
 
 .title-section {
