@@ -120,12 +120,30 @@ li {
 /*-----------------work---------------*/
 #works {
   background-color: #f9f6f2;
-  cursor: url("img/souris/cursor-01.png"), auto;
 }
 
 .works-img {
   width: 407px;
   height: auto;
+}
+
+.mouse-cursor {
+  cursor: url("img/souris/cursor-01.png"), auto;
+  animation: spin ease-in-out forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-side-title-img {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title-section {
@@ -148,7 +166,15 @@ li {
 /*-------presentation----animation-----------*/
 
 .works-content-element {
-  padding-top: 65px;
+  margin-top: 64px;
+}
+
+.works-content-presentation {
+  padding-top: 85px;
+}
+
+.works-content-presentation:hover {
+  padding-top: 80px;
 }
 
 .works-img-presentation {
@@ -281,7 +307,6 @@ li {
 }
 
 .votre-projet-content {
-  padding-top: 34px;
   padding-bottom: 84px;
 }
 
