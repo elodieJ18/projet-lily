@@ -123,8 +123,21 @@ li {
 }
 
 .works-img {
-  width: 407px;
+  width: 470px;
   height: auto;
+}
+
+.btn-voir-moins {
+  background-color: #d62929;
+  padding: 20px 13px;
+  height: 96px;
+  margin-right: 73px;
+}
+
+.txt-white {
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 .mouse-cursor {
@@ -168,12 +181,17 @@ li {
 .cash-presentation {
   width: 100%;
   background-color: rgb(255, 251, 246);
-  height: 16vh;
+  height: 10vh;
   padding-top: 23px;
   padding-bottom: -5px;
   position: absolute;
   bottom: 0px;
   z-index: 5;
+  display: block;
+}
+
+.cash-presentation.active {
+  display: none;
 }
 
 .works-content-element {
@@ -187,10 +205,7 @@ li {
 .works-img-presentation {
   display: flex;
   justify-content: center;
-}
-
-.works-img-presentation {
-  padding: 0;
+  padding-bottom: 27px;
 }
 
 .first-img,
@@ -201,27 +216,61 @@ li {
 
 .second-img {
   z-index: 2;
-  padding-bottom: 26px;
-}
-
-.second-img:hover {
-  bottom: 22px;
+  transition: all 0.1s linear;
+  padding-left: 120px;
 }
 
 .first-img {
   position: relative;
-  transform: rotate(347deg);
-  left: 277px;
-  bottom: 34px;
-  z-index: 2;
+  transform: rotate(-13deg);
+  left: 448px;
+  bottom: 60px;
+  z-index: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 .third-img {
   position: relative;
   transform: rotate(10deg);
-  right: 236px;
-  bottom: 76px;
+  right: 320px;
+  bottom: 55px;
   z-index: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+/*activer toute les images si un hover*/
+
+.first-img,
+.second-img,
+.third-img {
+  position: relative;
+}
+
+.works-img:hover .works-img-presentation {
+  transform: scale(1.15);
+}
+
+.first-img.active {
+  transform: rotate(0deg);
+  left: 590px;
+  bottom: 0px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.third-img.active {
+  transform: rotate(0deg);
+  right: 470px;
+  bottom: 0px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.hoverclick.active:hover {
+  bottom: 0px;
+  box-shadow: none;
 }
 
 .works-content-all {
@@ -229,6 +278,10 @@ li {
   justify-content: center;
   padding-bottom: 72px;
   display: none;
+}
+
+.works-content-all.active {
+  display: flex;
 }
 
 .works-img-all {
@@ -254,10 +307,12 @@ li {
 
 .work-description-left {
   transform: rotate(-90deg);
+  margin-top: 68px;
 }
 
 .work-description-right {
   transform: rotate(90deg);
+  margin-top: 68px;
 }
 
 .work-description-title {
