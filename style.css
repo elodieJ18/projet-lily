@@ -337,14 +337,13 @@ li {
   transition-timing-function: ease;
 }
 
-.img-presentation-open a:hover + .work-description-left {
+.img-presentation-open .work-description-left {
   margin-left: 0rem;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
 
-/*----------------------*/
-
+/*-------------------------*/
 .work-description-right {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -353,7 +352,7 @@ li {
   transition-timing-function: ease;
 }
 
-.works-img-left a:hover + .work-description-right {
+.works-img-left .work-description-right {
   margin-right: 0rem;
   transition-duration: 0.5s;
   transition-timing-function: ease;
@@ -370,7 +369,7 @@ li {
   transition-timing-function: ease;
 }
 
-.active .works-img-right a:hover + .work-description-left {
+.works-img-right .work-description-left {
   margin-left: 0rem;
   transition-duration: 0.5s;
   transition-timing-function: ease;
