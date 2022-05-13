@@ -167,7 +167,7 @@ li {
   display: flex;
   align-items: center;
   column-gap: 50px;
-  padding-top: 28px;
+  padding-top: 90px;
 }
 
 .border-underline-works {
@@ -362,6 +362,10 @@ li {
 
 #votre-projet {
   background-color: #fbf6f0;
+  background-image: url("img/t-01.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 250px;
 }
 
 .votre-projet-element {
