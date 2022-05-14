@@ -123,6 +123,7 @@ li {
 /*-----------------work---------------*/
 #works {
   background-color: #f9f6f2;
+  cursor: none;
 }
 
 .works-img {
@@ -144,20 +145,6 @@ li {
   color: white;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-}
-
-.mouse-cursor {
-  cursor: url("img/souris/cursor-01.png"), auto;
-  animation: spin ease-in-out forwards;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .top-side-title-img {
@@ -548,4 +535,31 @@ input[type="submit" i] {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #d62929;
+}
+
+/*-----------cursor--------------*/
+
+svg {
+  width: 100px;
+  position: relative;
+  animation: rotation 4.5s infinite linear;
+  pointer-events: none;
+  transition-timing-function: ease-out;
+  z-index: 999;
+}
+
+text {
+  font-size: 4em;
+  font-family: "Poppins";
+  font-weight: bold;
+  fill: #d62929;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
