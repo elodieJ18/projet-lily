@@ -70,6 +70,20 @@ li {
 .navbar-menu-container {
   display: flex;
   margin: 0;
+  column-gap: 206px;
+  justify-content: space-between;
+  align-items: center;
+  width: 58%;
+  margin-left: 60px;
+}
+
+.logo-navigation img {
+  width: 34px;
+}
+
+.navbar-menu-title {
+  display: flex;
+  margin: 0;
   padding-top: 20px;
   padding-bottom: 15px;
   column-gap: 27px;
@@ -424,12 +438,12 @@ li {
 .border-underline-studio {
   content: "";
   border-bottom: 1px #262121 solid;
-  padding-right: 210px;
+  padding-right: 323px;
 }
 
 .studio-element {
   width: 48vw;
-  padding-right: 262px;
+  padding-right: 375px;
   padding-bottom: 120px;
 }
 
@@ -520,7 +534,7 @@ input[type="submit" i] {
 }
 
 .footer-first-line img {
-  width: 30px;
+  width: 46px;
 }
 
 .footer-second-line ul {
@@ -548,4 +562,108 @@ input[type="submit" i] {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #d62929;
+}
+
+/*--------------second-page-----------------------*/
+#bloc-page-work {
+  background-color: #f9f6f2;
+}
+
+#banniere-presentation {
+  padding: 18px 20px;
+}
+
+.banniere-square-content {
+  background-image: url("img/mochi/mochi.png");
+  background-position: center;
+  border: 1px #262121 solid;
+  height: 270px;
+}
+
+#page-work-presentation {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  margin-top: 136px;
+  align-items: center;
+}
+
+.page-work-txt-presentation {
+  display: flex;
+  column-gap: 60px;
+}
+
+.page-work-txt {
+  width: 28vw;
+}
+
+.page-work-txt h2 {
+  font-size: 20px;
+}
+
+.page-work-txt p {
+  line-height: 32px;
+  font-size: 15px;
+}
+
+.page-work-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-work-title h1 {
+  margin-top: 0;
+}
+
+.page-work-title p {
+  margin: 0;
+}
+
+.page-work-img-presentation {
+  width: 90%;
+  margin-top: 78px;
+  margin-bottom: 78px;
+}
+
+.page-work-bloc-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.page-work-img-duo {
+  display: flex;
+  column-gap: 38px;
+  justify-content: center;
+  width: 100%;
+}
+
+.page-work-img-duo img {
+  width: 480px;
+  height: auto;
+}
+
+.page-work-img-solo img {
+  width: 100%;
+  height: auto;
+}
+
+.page-work-second-banniere {
+  background-image: url("img/mochi/fond-mochi.png");
+  background-position: center;
+  background-size: cover;
+  border-top: 1px #262121 solid;
+  border-bottom: 1px #262121 solid;
+  height: 270px;
+}
+
+.page-work-presentation-second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 136px;
+  padding-bottom: 90px;
+  align-items: center;
 }
