@@ -15,6 +15,16 @@
   src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap);
 }
 
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+}
+
 body,
 html {
   width: 100%;
@@ -29,25 +39,32 @@ h4,
 li,
 span,
 p {
-  font-family: "Syne", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #262121;
 }
 
 h1 {
-  font-family: "Syne", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
 h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 6px;
   margin: 0;
 }
 
 a {
-  font-family: "Syne", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #262121;
   font-weight: 500;
+}
+
+.red-txt {
+  font-weight: 500;
+  color: #d62929;
 }
 
 ul {
@@ -60,11 +77,23 @@ li {
 }
 
 #navbar {
-  background-color: #f9f6f2;
   border-bottom: 1px #262121 solid;
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
   top: 0;
+}
+
+.blur-nav {
+  background-color: #f9f6f2;
+}
+
+.blur-nav.sticky {
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-menu-container {
@@ -447,10 +476,20 @@ li {
   padding-bottom: 120px;
 }
 
+.studio-element p {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 44px;
+}
+
 /*---votre--projet--*/
 
 #votre-projet {
   background-color: #fbf6f0;
+  background-image: url("img/t-01.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 250px;
 }
 
 .votre-projet-element {
@@ -527,6 +566,7 @@ input[type="submit" i] {
   display: flex;
   justify-content: center;
   column-gap: 50px;
+  align-items: center;
 }
 
 .footer-first-line li a {
@@ -570,7 +610,7 @@ input[type="submit" i] {
 }
 
 #banniere-presentation {
-  padding: 18px 20px;
+  padding: 70px 20px;
 }
 
 .banniere-square-content {
@@ -599,7 +639,9 @@ input[type="submit" i] {
 }
 
 .page-work-txt h2 {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0;
 }
 
 .page-work-txt p {
