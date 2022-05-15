@@ -814,6 +814,10 @@ input[type="submit" i] {
     column-gap: 28px;
   }
 
+  .works-content-presentation {
+    padding-top: 0px;
+  }
+
   .works-img {
     width: 228px;
     height: auto;
@@ -827,6 +831,20 @@ input[type="submit" i] {
   .third-img {
     right: 200px;
     bottom: 40px;
+  }
+
+  .first-img.active {
+    width: 228px !important;
+    height: 160px !important;
+    left: 228px !important;
+    bottom: 0px;
+  }
+
+  .third-img.active {
+    width: 228px !important;
+    height: 160px !important;
+    right: 228px !important;
+    bottom: 0px;
   }
 
   .votre-projet-element {
@@ -881,6 +899,46 @@ input[type="submit" i] {
     content: "";
     border-bottom: 1px #262121 solid;
     padding-right: 50px;
+  }
+  /*--works---*/
+
+  .img-presentation-open.active {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .works-img-all {
+    width: 100%;
+  }
+
+  .works-img-all li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-description-left {
+    writing-mode: initial;
+    padding-left: 0px;
+  }
+
+  .works-img-all .works-img-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-description-right {
+    writing-mode: initial;
+    padding-left: 0px;
+    margin-right: 0rem;
+  }
+
+  .works-img-left .work-description-right {
+    margin: 0;
+  }
+
+  .works-img-right {
+    margin-left: 0px;
   }
 
   /*------studio-----------*/
