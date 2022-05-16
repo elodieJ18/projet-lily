@@ -173,14 +173,8 @@ li {
   height: auto;
 }
 
-.btn-voir-moins {
-  background-color: #d62929;
-  color: white;
-  padding: 13px 13px;
-  display: flex;
-  width: 130px;
-  flex-direction: column;
-  align-items: center;
+.btn-voir-work {
+  display: none;
 }
 
 .txt-white {
@@ -958,6 +952,23 @@ input[type="submit" i] {
     padding-right: 50px;
   }
   /*--works---*/
+
+  .btn-voir-work {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    background-color: #d62929;
+    cursor: pointer;
+    color: white;
+    padding: 13px 13px;
+    position: relative;
+    display: flex;
+    width: 230px;
+    margin-left: 130px;
+    z-index: 99;
+    bottom: 102px;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .img-presentation-open.active {
     display: flex;

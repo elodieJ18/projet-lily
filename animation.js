@@ -6,11 +6,11 @@ const firstImg = document.querySelector(".first-img");
 const thirdImg = document.querySelector(".third-img");
 const imgOpen = document.querySelector(".img-presentation-open");
 const imgClose = document.querySelector(".img-presentation-close");
-const btnMoins = document.querySelector(".btn-voir-moins");
+const btnWork = document.querySelector(".btn-voir-work");
 
 let active = false;
 
-openWorks.addEventListener("click", () => {
+btnWork.addEventListener("click", () => {
   active = !active;
   active
     ? allWorks.classList.add("active")
