@@ -33,7 +33,25 @@ btnWork.addEventListener("click", () => {
   active ? imgOpen.classList.add("active") : imgOpen.classList.remove("active");
 });
 
-window.addEventListener("scroll", function () {
-  var navblur = this.document.querySelector(".blur-nav");
-  navblur.classList.toggle("sticky", window.scrollY > 0);
+openWorks.addEventListener("click", () => {
+  active = !active;
+  active
+    ? allWorks.classList.add("active")
+    : allWorks.classList.remove("active");
+  active
+    ? cashCover.classList.add("active")
+    : cashCover.classList.remove("active");
+  active
+    ? hoverClick.classList.add("active")
+    : hoverClick.classList.remove("active");
+  active
+    ? firstImg.classList.add("active")
+    : firstImg.classList.remove("active");
+  active
+    ? thirdImg.classList.add("active")
+    : thirdImg.classList.remove("active");
+  active
+    ? imgClose.classList.add("active")
+    : imgClose.classList.remove("active");
+  active ? imgOpen.classList.add("active") : imgOpen.classList.remove("active");
 });
