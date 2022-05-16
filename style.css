@@ -86,24 +86,39 @@ li {
 }
 
 #navbar .nav-link.nav-link.scrollSection {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-bottom: 2px solid #d62929;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-}
-
-#navbar .navbar-menu-element {
-  overflow: hidden;
-  height: 25px;
+  background-size: 100% 100%;
 }
 
 .nav-link {
-  transform: translateX(0%);
+  text-decoration: none;
+  background: linear-gradient(
+      to top,
+      #d62929 0%,
+      #d62929 5% 2px,
+      transparent 5.01%
+    )
+    no-repeat left bottom / 0 100%;
+  transition: background-size 0.5s;
+}
+
+.liens-anim {
+  text-decoration: none;
+  background: linear-gradient(
+      to top,
+      #d4766e 0%,
+      #d4766e 5% 1px,
+      transparent 5.01%
+    )
+    no-repeat left bottom / 0 100%;
+  transition: background-size 0.5s;
+}
+
+.liens-anim:hover {
+  background-size: 100% 100%;
+}
+#navbar .navbar-menu-element {
+  overflow: hidden;
+  height: 25px;
 }
 
 .blur-nav {
@@ -209,14 +224,14 @@ li {
   animation: spin ease-in-out forwards;
 }
 
-@keyframes spin {
+/*@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/
 
 .top-side-title-img {
   display: flex;
@@ -245,13 +260,12 @@ li {
 .cash-presentation {
   width: 100%;
   background-color: rgb(255, 251, 246);
-  height: 10vh;
+  height: 13vh;
   padding-top: 23px;
-  padding-bottom: -5px;
-  position: absolute;
-  bottom: 0px;
-  z-index: 5;
+  margin-top: -100px;
+  z-index: 999;
   display: block;
+  position: relative;
 }
 
 .cash-presentation.active {
@@ -452,6 +466,16 @@ li {
   margin-left: 0rem;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+}
+
+/*----animation-on-scroll------*/
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
 }
 
 /*----fin animation----*/
@@ -890,7 +914,7 @@ input[type="submit" i] {
   }
 
   .title-studio-element {
-    padding-top: 0px;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     column-gap: 28px;
