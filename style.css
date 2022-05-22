@@ -633,6 +633,7 @@ textarea {
 }
 
 input[type="submit" i] {
+  -webkit-appearance: none;
   background-color: #d82a19;
   border: none;
   padding: 8px 24px;
