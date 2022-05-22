@@ -36,21 +36,22 @@
           <li class="logo-navigation"><a href="index.html"><img src="img/logo/logomini-01.svg"/></a></li>
           <ol class="navbar-menu-title">
           <li class="navbar-menu-element">
-            <a class="nav-link" aria-current="page" href="#works">works</a>
+            <a data-page="works" class="nav-link" aria-current="page" href="#works">portfolio</a>
           </li>
           <li class="navbar-menu-element">
-            <a class="nav-link" aria-current="page" href="#studio">the studio</a>
+            <a data-page="studio" class="nav-link" aria-current="page" href="#studio">le studio</a>
           </li>
           <li class="navbar-menu-element">
-            <a class="nav-link" aria-current="page" href="#votre-projet">votre projet</a>
+            <a data-page="votre projet" class="nav-link" aria-current="page" href="#votre-projet">votre projet</a>
           </li>
-          <li class="navbar-menu-element">
-            <a class="nav-link" aria-current="page" href="#footer">contact</a>
-          </li></ol>
+          <li class="navbar-menu-element contact">
+            <a class="nav-link" aria-current="page" href="#studio">contact</a>
+          </li>
+        </ol>
         </ul>
       </div>
     </header>
-    <section id="home-header">
+    <div data-index="0" id="home-header" class="home-header">
       <div class="square-content">
         <div class="square-title">
           <h1 class="titre-twenty-two">
@@ -68,12 +69,12 @@
           </div>
         </div>
       </div>
-    </section>
-    <section id="works" class="mouse-cursor">
+    </div>
+    <section data-index="1" id="works" class="works">
       <div id="works-content">
         <div class="title-content-left">
           <span class="border-underline-works"></span>
-          <h2 class="title-section">works</h2>
+          <h2 class="title-section">portfolio</h2>
         </div>
         <div class="works-content-element">
           <div class="works-content-presentation">
@@ -90,7 +91,6 @@
               </div></li>
               <img class="works-img img-presentation third-img" src="img/Vignettes/burdi.png" alt=""/>
             </div>
-            <div class="cash-presentation"></div>
           </div>
           <div class="works-content-all">
             <ul class="works-img-all">
@@ -135,7 +135,8 @@
         </div>
       </div>
     </section>
-    <section id="studio">
+    <section data-index="2" id="studio" class="studio">
+      <div class="cash-presentation"></div>
       <div class="studio-content">
         <div class="title-studio-element">
           <h2 class="title-section">le studio</h2>
@@ -167,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section id="votre-projet">
+    <section data-index="3" id="votre-projet" class="votre-projet">
       <div class="votre-projet-content">
         <div class="top-side-title-img">
         <div class="title-content-left">

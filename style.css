@@ -85,8 +85,10 @@ li {
   top: 0;
 }
 
-#navbar .nav-link.nav-link.scrollSection {
-  background-size: 100% 100%;
+/*------animation-nav-color-----*/
+
+.animUnderline {
+  position: absolute;
 }
 
 .nav-link {
@@ -101,24 +103,28 @@ li {
   transition: background-size 0.5s;
 }
 
-.liens-anim {
-  text-decoration: none;
+.nav-link.active {
   background: linear-gradient(
-      to top,
-      #d4766e 0%,
-      #d4766e 5% 1px,
-      transparent 5.01%
-    )
-    no-repeat left bottom / 0 100%;
+    to top,
+    #d62929 0%,
+    #d62929 5% 2px,
+    transparent 5.01%
+  );
+  background-size: 100% 100%;
   transition: background-size 0.5s;
 }
 
-.liens-anim:hover {
-  background-size: 100% 100%;
+.contact {
+  padding: 3px 16px 3px 16px;
+  background-color: #d62929;
 }
+
+.contact .nav-link {
+  color: white;
+}
+
 #navbar .navbar-menu-element {
   overflow: hidden;
-  height: 25px;
 }
 
 .blur-nav {
@@ -153,6 +159,7 @@ li {
   padding-bottom: 15px;
   column-gap: 27px;
   justify-content: center;
+  align-items: center;
 }
 
 /*------square----------*/
@@ -263,7 +270,7 @@ li {
   height: 13vh;
   padding-top: 23px;
   margin-top: -100px;
-  z-index: 999;
+  z-index: 989;
   display: block;
   position: relative;
 }
@@ -880,13 +887,13 @@ input[type="submit" i] {
     padding-left: 0px;
     padding-top: 7px;
     padding-bottom: 15px;
-    column-gap: 17px;
+    column-gap: 10px;
     justify-content: center;
   }
 
   #home-header {
     background-color: #f9f6f2;
-    padding: 94px 16px 0px;
+    padding: 108px 16px 0px;
   }
 
   .square-content {
@@ -1068,6 +1075,11 @@ input[type="submit" i] {
 
   /*------studio-----------*/
 
+  .cash-presentation {
+    height: 5vh;
+    padding-top: 23px;
+  }
+
   .studio-element {
     width: 80vw;
     padding-right: 28px;
@@ -1112,6 +1124,11 @@ input[type="submit" i] {
 
   .page-work-img-duo img {
     width: 300px;
+    height: auto;
+  }
+
+  .img-size-caviar-two-duo {
+    width: 237px !important;
     height: auto;
   }
 
@@ -1163,7 +1180,7 @@ input[type="submit" i] {
   }
 
   #banniere-presentation {
-    padding: 95px 20px 30px;
+    padding: 114px 20px 30px;
   }
 
   .page-work-img-presentation {
@@ -1181,7 +1198,17 @@ input[type="submit" i] {
 
   /*-------page---------*/
 
+  .page-work-second-banniere-mochi,
+  .page-work-second-banniere-reigns {
+    height: 84px;
+  }
+
   .img-size-caviar-one-duo {
     width: 100% !important;
+  }
+
+  .size-gif {
+    width: 236px;
+    height: auto;
   }
 }
