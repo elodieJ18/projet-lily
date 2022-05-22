@@ -10,7 +10,7 @@ const sections = document.querySelectorAll("section");
 
 function activeMenu() {
   let len = sections.length;
-  while (--len && window.scrollY + 20 < sections[len].offsetTop) {}
+  while (--len && window.scrollY + 97 < sections[len].offsetTop) {}
   li.forEach((ltx) => ltx.classList.remove("active"));
   li[len].classList.add("active");
 }
