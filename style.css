@@ -221,6 +221,22 @@ li {
   display: none;
 }
 
+.btn-show-all {
+  box-shadow: 2px 2px 8px #888888;
+  font-family: "Montserrat", sans-serif;
+  background-color: #d62929;
+  cursor: pointer;
+  color: white;
+  padding: 11px 3px;
+  display: flex;
+  width: 132px;
+  font-size: 12px;
+  bottom: 76px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+}
+
 .txt-white {
   color: white;
   writing-mode: vertical-rl;
@@ -901,7 +917,7 @@ input[type="submit" i] {
   }
 
   .navbar-menu a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .navbar-menu-container {
     display: flex;
@@ -927,6 +943,10 @@ input[type="submit" i] {
   #home-header {
     background-color: #f9f6f2;
     padding: 108px 16px 0px;
+  }
+
+  .contact {
+    padding: 3px 10px 6px 10px;
   }
 
   .square-content {
@@ -1062,7 +1082,7 @@ input[type="submit" i] {
     margin-left: 43px;
     z-index: 99;
     font-size: 12px;
-    bottom: 76px;
+    bottom: 92px;
     flex-direction: column;
     align-items: center;
   }
