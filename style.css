@@ -61,7 +61,8 @@ h2 {
 }
 
 a {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica 65 Medium", sans-serif;
+  letter-spacing: 0.5px;
   text-decoration: none;
   color: #262121;
   font-weight: 500;
