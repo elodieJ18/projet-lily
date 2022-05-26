@@ -386,6 +386,7 @@ li {
   bottom: 0px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+  animation: close-img 2s ease-in-out forwards;
 }
 
 .third-img.active {
@@ -394,6 +395,21 @@ li {
   bottom: 0px;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+  animation: close-img 2s ease-in-out forwards;
+}
+
+@keyframes close-img {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 .hoverclick.active:hover {
@@ -893,8 +909,7 @@ input[type="submit" i] {
   .img-presentation-open.active {
     display: flex;
     width: 100%;
-    width: 49%;
-    max-width: 100%;
+    margin-left: 53px;
   }
 }
 
@@ -1015,7 +1030,6 @@ input[type="submit" i] {
     height: 160px !important;
     left: 228px !important;
     bottom: 0px;
-    animation: close-img 2s ease-in-out forwards !important;
   }
 
   .third-img.active {
@@ -1023,20 +1037,6 @@ input[type="submit" i] {
     height: 160px !important;
     right: 228px !important;
     bottom: 0px;
-    animation: close-img 2s ease-in-out forwards !important;
-  }
-
-  @keyframes close-img {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      z-index: -1;
-    }
   }
 
   .votre-projet-element {
