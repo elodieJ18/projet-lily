@@ -535,14 +535,14 @@ li {
 }
 
 /*----animation-on-scroll------*/
-.js-scroll {
+/*.js-scroll {
   opacity: 0;
   transition: opacity 500ms;
 }
 
 .js-scroll.scrolled {
   opacity: 1;
-}
+}*/
 
 /*----fin animation----*/
 
@@ -1015,6 +1015,7 @@ input[type="submit" i] {
     height: 160px !important;
     left: 228px !important;
     bottom: 0px;
+    animation: close-img 2s ease-in-out forwards !important;
   }
 
   .third-img.active {
@@ -1022,6 +1023,20 @@ input[type="submit" i] {
     height: 160px !important;
     right: 228px !important;
     bottom: 0px;
+    animation: close-img 2s ease-in-out forwards !important;
+  }
+
+  @keyframes close-img {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
   }
 
   .votre-projet-element {
